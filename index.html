@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const prices = [120, 250, 300, 450, 600];
+
+// 1. Filter prices greater than 250
+const filteredPrices = prices.filter(price => price > 250);
+
+// 2. Apply 10% discount to filtered prices using map()
+const discountedPrices = filteredPrices.map(price => price * 0.9);
+
+// 3. Log both original and discounted arrays
+console.log("Original Prices:", prices);
+console.log("Filtered Prices ( > 250 ): ", filteredPrices);
+console.log("Discounted Prices (10% off):", discountedPrices);
+    </script>
+</body>
+</html>
